@@ -79,3 +79,11 @@ O se puede utilizar el operador OR.
 `UPDATE usuario SET ciudad_nac = 'Manizales' WHERE identificacion='118'`
 
 ![Consulta11](img/tabla_actualizar_datos.png "Tabla actializar datos")
+
+## TITULO
+
+### 12. -TEXTO-
+
+![Consulta12](img/tabla_pedidos.png "Tabla Pedidos")
+
+
