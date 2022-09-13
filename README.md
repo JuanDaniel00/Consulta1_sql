@@ -71,3 +71,11 @@ O se puede utilizar el operador OR.
 ![Consulta10](img/tabla_delete_usuarios.png "Tabla delete users")
 
 ![Consulta10.1](img/tabla_delete_usuarios-1.png "Tabla delete users1")
+
+## COMANDO UPDATE
+
+### 11. Para actualizar la ciudad de nacimiento de Andres Vanegas, cuya informacion es 118.
+
+`UPDATE usuario SET ciudad_nac = 'Manizales' WHERE identificacion='118'`
+
+![Consulta11](img/tabla_actualizar_datos.png "Tabla actializar datos")
