@@ -46,19 +46,19 @@ O se puede utilizar el operador OR.
 
 ### 7. Si desea obtener los registros que contengan la letra 'a'.
 
-`SELECT * FROM usuario WHERE nombre LIKE '%a%'`
+- `SELECT * FROM usuario WHERE nombre LIKE '%a%'`
 
 ![Consulta7](img/tabla_nombreconA.png "Tabla nombreConA")
 
 ### 8. Si se desea obtener los registros donde la cuarta letra del nombre sea una 'a'.
 
-`SELECT * FROM usuario WHERE nombre LIKE '___a%'`
+- `SELECT * FROM usuario WHERE nombre LIKE '___a%'`
 
 ![Consulta8](img/tabla_nom_4a.png "Tabla nombreConA en cuarto")
 
 ### 9. Si se desea obtener los registros cuya identificacion este entre el intervalo 110 y 150, se debe utilizar la clausula BETWEEN, que sirve para especificar un intervalo de valores.
 
-`SELECT * FROM usuario WHERE identificacion BETWEEN '110' AND '150'`
+- `SELECT * FROM usuario WHERE identificacion BETWEEN '110' AND '150'`
 
 ![Consulta9](img/tabla_seleccionar_entre.png "Tabla seleccionar entre x variables")
 
@@ -66,7 +66,7 @@ O se puede utilizar el operador OR.
 
 ### 10. Para eleminar solamente los registro cuya identificacion sea mayor de 130.
 
-`DELETE FROM usuario WHERE identificacion > '130'`
+- `DELETE FROM usuario WHERE identificacion > '130'`
 
 ![Consulta10](img/tabla_delete_usuarios.png "Tabla delete users")
 
@@ -76,17 +76,30 @@ O se puede utilizar el operador OR.
 
 ### 11. Para actualizar la ciudad de nacimiento de Andres Vanegas, cuya informacion es 118.
 
-`UPDATE usuario SET ciudad_nac = 'Manizales' WHERE identificacion='118'`
+- `UPDATE usuario SET ciudad_nac = 'Manizales' WHERE identificacion='118'`
 
 ![Consulta11](img/tabla_actualizar_datos.png "Tabla actializar datos")
 
 ## INNER JOIN
 
-### 12. Permite obtener datos de dos o mas tablas. Cuando se realiza la concantenacion de las tablas, no necesariamente se deben mostrar todos los datos de las tablas.
+### Permite obtener datos de dos o mas tablas. Cuando se realiza la concantenacion de las tablas, no necesariamente se deben mostrar todos los datos de las tablas.
 
 ## Tabla Pedidos
 
 
 ![Tabla Pedidos](img/tabla_pedidos.png "Tabla Pedidos")
+
+### 12. Para visualizar los campos "identificacion", "nombre", "apellidos" de la tabla "usuario" y "nropedido", "fecha de compra", "fecha de vencimiento", "observacion de pedidos", se debe realizar la siguiente instruccion SQL:
+
+- `SELECT usuario.identificacion, usuario.nombre, usuario.apellidos, pedido.nropedido, pedidos.fechaCompra, pedidos.fechaVence, pedidos.Observacion, FROM usuario INNER JOIN pedidos ON usuario.identificacion = pedidos.identificacion`
+
+![Consulta12](img/tabla_INNER_JOIN.png "Tabla inner join")
+
+### 13. Para visualizar todos los campos de la tablas "usuario" y "pedido" donde identificacion sea mayor que 100, se debe realizar la siguiente instruccion.
+
+- `SELECT usuario.*, pedidos.* FROM usuario INNER JOIN pedidos ON usuario.identificacion = pedidos.identificacion WHERE usuario.identificacion > 100`
+
+![Consulta 13](img/tabla_completa.png "Tabla Completa")
+
 
 
