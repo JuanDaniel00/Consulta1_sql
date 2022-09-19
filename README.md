@@ -80,10 +80,13 @@ O se puede utilizar el operador OR.
 
 ![Consulta11](img/tabla_actualizar_datos.png "Tabla actializar datos")
 
-## TITULO
+## INNER JOIN
 
-### 12. -TEXTO-
+### 12. Permite obtener datos de dos o mas tablas. Cuando se realiza la concantenacion de las tablas, no necesariamente se deben mostrar todos los datos de las tablas.
 
-![Consulta12](img/tabla_pedidos.png "Tabla Pedidos")
+## Tabla Pedidos
+
+
+![Tabla Pedidos](img/tabla_pedidos.png "Tabla Pedidos")
 
 
